@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        /* border-collapse: collapse; */
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+        margin: auto;
+      }
+      th,
+      tr,
+      td {
+        /* border: 1px solid blue; */
+        padding: 5px 10px;
+        background-color: rgb(255, 246, 242);
+      }
+      tr:nth-of-type(even) td {
+        background-color: rgb(214, 233, 241);
+      }
+      h2 {
+        text-align: center;
+      }
+      th {
+        background-color: rgb(35, 144, 163);
+        color: white;
+      }
+      td:nth-of-type(3) {
+        color: rbg(99, 99, 255);
+        box-shadow: 0 0 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>hello는 반갑다는 뜻이야!</h3>
+    <h3>Javascript로 작성되었어.</h3>
+    <h2>&& and</h2>
+    <table>
+      <tr>
+        <th>좌변</th>
+        <th>우변</th>
+        <th>결과</th>
+      </tr>
+      <tr>
+        <td>false</td>
+        <td>false</td>
+        <td id="andFalseFalse"></td>
+      </tr>
+      <tr>
+        <td>false</td>
+        <td>true</td>
+        <td id="andFalseTrue"></td>
+      </tr>
+      <tr>
+        <td>true</td>
+        <td>false</td>
+        <td id="andTrueFalse"></td>
+      </tr>
+      <tr>
+        <td>true</td>
+        <td>true</td>
+        <td id="andTrueTrue"></td>
+      </tr>
+    </table>
+
+    <h2>|| or</h2>
+    <table>
+      <tr>
+        <td>false</td>
+        <td>false</td>
+        <td id="orFalseFalse">false || false</td>
+      </tr>
+      <tr>
+        <td>false</td>
+        <td>true</td>
+        <td id="orFalseTrue"></td>
+      </tr>
+      <tr>
+        <td>true</td>
+        <td>false</td>
+        <td id="orTrueFalse"></td>
+      </tr>
+      <tr>
+        <td>true</td>
+        <td>true</td>
+        <td id="orTrueTrue"></td>
+      </tr>
+    </table>
+
+    <script>
+      // Function to calculate logical AND and OR
+      function logicalOperations() {
+        document.getElementById("andFalseFalse").innerText = false && false; // AND operation
+        document.getElementById("andFalseTrue").innerText = false && true;
+        document.getElementById("andTrueFalse").innerText = true && false;
+        document.getElementById("andTrueTrue").innerText = true && true;
+
+        document.getElementById("orFalseFalse").innerText = false || false; // OR operation
+        document.getElementById("orFalseTrue").innerText = false || true;
+        document.getElementById("orTrueFalse").innerText = true || false;
+        document.getElementById("orTrueTrue").innerText = true || true;
+      }
+
+      // Run the logical operations
+      logicalOperations();
+    </script>
+  </body>
+</html>
