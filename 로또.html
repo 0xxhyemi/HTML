@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로또 번호 추천</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f3f4f6;
+        padding: 20px;
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+      #recommendations {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        margin-top: 30px;
+      }
+      .lotto-card {
+        background: white;
+        border-radius: 12px;
+        padding: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        font-size: 1.1rem;
+      }
+      .lotto-number {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        margin: 3px;
+        border-radius: 50%;
+        background-color: #3b82f6;
+        color: white;
+      }
+      canvas {
+        margin: 30px auto;
+        display: block;
+        max-width: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>로또 번호 추천 & 출현 빈도</h1>
+    <canvas id="myChart" width="400" height="200"></canvas>
+
+    <h2 style="text-align: center">추천 번호 (10세트)</h2>
+    <div id="recommendations"></div>
+
+    <script>
+      fetch("/api/lotto/recommend")
+        .then((res) => res.json())
+        .then((data) => {
+          const mostCommon = data.most_common;
+          const recommendations = data.recommendations;
+
+          // 차트 그리기
+          const ctx = document.getElementById("myChart");
+          new Chart(ctx, {
+            type: "bar",
+            data: {
+              labels: mostCommon.map((n) => `번호 ${n}`),
+              datasets: [
+                {
+                  label: "많이 나온 번호 (Top 8)",
+                  data: mostCommon.map(() => 1),
+                  backgroundColor: "rgba(59, 130, 246, 0.6)",
+                  borderColor: "rgba(59, 130, 246, 1)",
+                  borderWidth: 1,
+                },
+              ],
+            },
+            options: {
+              scales: {
+                y: {
+                  beginAtZero: true,
+                },
+              },
+            },
+          });
+
+          // 추천 번호 카드 만들기
+          const container = document.getElementById("recommendations");
+          recommendations.forEach((set) => {
+            const card = document.createElement("div");
+            card.className = "lotto-card";
+            set.forEach((num) => {
+              const span = document.createElement("span");
+              span.className = "lotto-number";
+              span.textContent = num;
+              card.appendChild(span);
+            });
+            container.appendChild(card);
+          });
+        });
+    </script>
+  </body>
+</html>

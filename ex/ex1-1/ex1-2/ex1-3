@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>강귀요미 칭찬스티커 🧸</title>
+    <style>
+      /* 기본 및 폰트 */
+      body {
+        margin: 0;
+        font-family: "맑은 고딕", "Malgun Gothic", sans-serif;
+        background: #fff8f0;
+        color: #333;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* 탭 메뉴 컨테이너 */
+      .tab-container {
+        display: flex;
+        background-color: #a6b0b1;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      /* 탭 버튼 */
+      .tab {
+        flex: 1;
+        padding: 14px 0;
+        text-align: center;
+        font-size: 1.1rem;
+        font-weight: 600;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        color: white;
+        transition: background-color 0.3s ease;
+        user-select: none;
+      }
+      .tab:hover {
+        background-color: #888f90;
+      }
+      .tab.active {
+        background-color: #ff6b81;
+        font-weight: 700;
+        box-shadow: inset 0 -4px 0 #d6455b;
+      }
+
+      /* 콘텐츠 영역 */
+      .content {
+        flex: 1;
+        padding: 30px 40px;
+        display: none;
+        background: white;
+        box-shadow: inset 0 0 15px #ffe1df;
+        border-radius: 0 0 12px 12px;
+        max-width: 900px;
+        margin: 20px auto 40px;
+        min-height: 480px;
+      }
+      .content.active {
+        display: block;
+      }
+
+      /* 제목 */
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #ff6b81;
+        user-select: none;
+      }
+
+      /* 스티커판 스타일 */
+      #스티커 {
+        background: #fff8f0;
+        padding: 20px 30px 30px;
+        border-radius: 12px;
+        box-shadow: 0 6px 15px rgba(255, 107, 129, 0.2);
+        max-width: 720px;
+        margin: 0 auto;
+      }
+
+      select#monthSelect {
+        display: block;
+        margin: 0 auto 20px auto;
+        font-size: 16px;
+        padding: 8px 12px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        background: white;
+        width: 220px;
+        cursor: pointer;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 12px;
+        margin-bottom: 20px;
+      }
+
+      .cell {
+        position: relative;
+        width: 100%;
+        padding-top: 100%;
+        background-color: #fceae9;
+        border-radius: 14px;
+        box-shadow: 0 3px 6px rgba(255, 107, 129, 0.3);
+        cursor: default;
+        transition: background-color 0.3s ease;
+      }
+      .cell:hover {
+        background-color: #ffd6dc;
+      }
+      .cell span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2.8rem;
+        user-select: none;
+      }
+
+      #praiseInput {
+        display: block;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto 12px;
+        padding: 12px 15px;
+        font-size: 1rem;
+        border-radius: 12px;
+        border: 1px solid #ddd;
+        box-shadow: inset 0 2px 4px #fff1f3;
+        transition: border-color 0.3s ease;
+      }
+      #praiseInput:focus {
+        outline: none;
+        border-color: #ff6b81;
+        box-shadow: 0 0 8px #ff6b81aa;
+      }
+
+      #saveBtn {
+        display: block;
+        margin: 0 auto;
+        padding: 12px 28px;
+        font-size: 1.1rem;
+        color: white;
+        background: #ff6b81;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        box-shadow: 0 4px 12px #ff6b81cc;
+        transition: background 0.3s ease;
+        user-select: none;
+      }
+      #saveBtn:hover {
+        background: #d6455b;
+        box-shadow: 0 6px 18px #d6455bcc;
+      }
+
+      /* 축하 애니메이션 */
+      .fireworks {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        pointer-events: none;
+        z-index: 999;
+        font-size: 4rem;
+        animation: pop 0.8s ease-out forwards;
+        user-select: none;
+        text-align: center;
+        line-height: 100vh;
+      }
+      @keyframes pop {
+        0% {
+          opacity: 1;
+          transform: scale(0.5);
+        }
+        100% {
+          opacity: 0;
+          transform: scale(2);
+        }
+      }
+      .congrats {
+        position: fixed;
+        top: 45%;
+        width: 100%;
+        text-align: center;
+        font-size: 2.4rem;
+        color: #ff3e6c;
+        z-index: 1000;
+        animation: fadeOut 2s ease-in-out forwards;
+        user-select: none;
+        font-weight: 700;
+        text-shadow: 0 0 5px #ff3e6c88;
+      }
+      @keyframes fadeOut {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 탭 메뉴 -->
+    <div class="tab-container">
+      <button class="tab active" onclick="openMenu('about', this)">
+        About
+      </button>
+      <button class="tab" onclick="openMenu('memo', this)">memo</button>
+
+      <button class="tab" onclick="openMenu('♥', this)">♥</button>
+      <button class="tab" onclick="openMenu('스티커', this)">스티커</button>
+    </div>
+
+    <!-- 탭별 콘텐츠 영역 -->
+    <div id="about" class="content active">
+      <h1>About</h1>
+      <p>여기에 직접 작성할 About 내용이 들어갑니다.</p>
+    </div>
+
+    <div id="memo" class="content">
+      <h1>memo</h1>
+      <p>memo 탭 내용</p>
+    </div>
+
+    <div id="♥" class="content">
+      <h1>♥</h1>
+      <p>♥ 탭 내용</p>
+    </div>
+
+    <!-- 스티커커 탭 안에 스티커판 -->
+    <div id="스티커" class="content">
+      <h1>우주세계최고 귀요미 스티커 현황 🧸</h1>
+
+      <select id="monthSelect" aria-label="월 선택"></select>
+
+      <div class="grid" id="stickerGrid"></div>
+
+      <input
+        type="text"
+        id="praiseInput"
+        placeholder="칭찬 내용을 입력하세요 😊"
+        aria-label="칭찬 입력"
+      />
+      <button id="saveBtn" aria-label="칭찬 저장하기">저장하기</button>
+    </div>
+
+    <script>
+      // 탭 메뉴 열기 함수
+      const tabs = document.querySelectorAll(".tab");
+      const contents = document.querySelectorAll(".content");
+
+      function openMenu(targetId, clickedTab) {
+        contents.forEach((c) => c.classList.remove("active"));
+        tabs.forEach((t) => t.classList.remove("active"));
+
+        document.getElementById(targetId).classList.add("active");
+        clickedTab.classList.add("active");
+
+        // 스티커 탭일 때만 스티커 데이터 로드
+        if (targetId === "스티커") {
+          loadMonthData(monthSelect.value);
+        }
+      }
+
+      // 스티커판 JS
+      const bearEmoji = "🧸";
+      const grid = document.getElementById("stickerGrid");
+      const praiseInput = document.getElementById("praiseInput");
+      const saveBtn = document.getElementById("saveBtn");
+      const monthSelect = document.getElementById("monthSelect");
+
+      const now = new Date();
+      const currentMonth = `${now.getFullYear()}-${String(
+        now.getMonth() + 1
+      ).padStart(2, "0")}`;
+      let currentData = [];
+
+      // 월 선택 초기화
+      for (let i = 0; i < 12; i++) {
+        const date = new Date(now.getFullYear(), i);
+        const value = `${date.getFullYear()}-${String(i + 1).padStart(2, "0")}`;
+        const option = document.createElement("option");
+        option.value = value;
+        option.textContent = `${date.getFullYear()}년 ${i + 1}월`;
+        if (value === currentMonth) option.selected = true;
+        monthSelect.appendChild(option);
+      }
+
+      function loadMonthData(month) {
+        currentData = JSON.parse(
+          localStorage.getItem("sticker_" + month) || "[]"
+        );
+        renderGrid();
+      }
+
+      function renderGrid() {
+        grid.innerHTML = "";
+        for (let i = 0; i < 10; i++) {
+          const cell = document.createElement("div");
+          cell.className = "cell";
+          const item = currentData[i];
+          if (item) {
+            const span = document.createElement("span");
+            span.textContent = bearEmoji;
+            span.title = item.praise;
+            span.onclick = (e) => {
+              e.stopPropagation();
+              alert("칭찬 내용: " + item.praise);
+            };
+            cell.appendChild(span);
+          }
+          grid.appendChild(cell);
+        }
+      }
+
+      function showCelebration() {
+        const firework = document.createElement("div");
+        firework.className = "fireworks";
+        firework.innerHTML = "🎆🎉🎇🎊";
+        document.body.appendChild(firework);
+
+        const congrats = document.createElement("div");
+        congrats.className = "congrats";
+        congrats.textContent = "칭찬 10개 달성! 정말 잘했어요! 🎉";
+        document.body.appendChild(congrats);
+
+        setTimeout(() => {
+          firework.remove();
+          congrats.remove();
+        }, 2000);
+      }
+
+      saveBtn.onclick = () => {
+        const praise = praiseInput.value.trim();
+        if (!praise) {
+          alert("칭찬 내용을 입력해주세요.");
+          return;
+        }
+
+        let emptyIndex = currentData.findIndex((item) => !item);
+        if (emptyIndex === -1 && currentData.length < 10) {
+          emptyIndex = currentData.length;
+        }
+
+        if (emptyIndex === -1 || emptyIndex >= 10) {
+          alert("이번 달 칭찬 10개를 모두 완료했어요!");
+          return;
+        }
+
+        currentData[emptyIndex] = { emoji: bearEmoji, praise: praise };
+        localStorage.setItem(
+          "sticker_" + monthSelect.value,
+          JSON.stringify(currentData)
+        );
+        praiseInput.value = "";
+        renderGrid();
+
+        if (currentData.filter((item) => item).length === 10) {
+          showCelebration();
+        }
+      };
+
+      monthSelect.onchange = () => {
+        loadMonthData(monthSelect.value);
+      };
+
+      // 초기 로딩은 About 탭 활성화 되어 있음
+    </script>
+  </body>
+</html>
