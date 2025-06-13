@@ -4,191 +4,166 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>황혜미 포트폴리오</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
       rel="stylesheet"
     />
     <style>
       body {
-        font-family: "Press Start 2P", sans-serif;
-      }
-      .glow {
-        text-shadow: 0 0 5px #00f, 0 0 10px #00f, 0 0 15px #0ff;
-      }
-      .pixel-button {
-        border: 3px solid #000;
-        background: #ff0;
-        padding: 10px 20px;
-        display: inline-block;
-        font-size: 14px;
-        transition: transform 0.1s;
-      }
-      .pixel-button:hover {
-        transform: scale(1.1);
-        background: #0ff;
-      }
-      .xp-bar {
-        height: 20px;
-        background: linear-gradient(to right, #0ff 80%, #ccc 80%);
-        border: 2px solid #000;
-      }
-      .scroll-down-arrow {
-        display: block;
-        margin: 20px auto 0;
-        font-size: 24px;
-        animation: bounce 1s infinite;
-      }
-      @keyframes bounce {
-        0%,
-        100% {
-          transform: translateY(0);
-        }
-        50% {
-          transform: translateY(5px);
-        }
+        font-family: "Noto Sans KR", sans-serif;
       }
     </style>
   </head>
-  <body
-    class="bg-gradient-to-b from-blue-200 via-blue-100 to-white text-gray-900"
-  >
-    <header class="bg-blue-900 text-white fixed top-0 w-full z-50 shadow-md">
-      <nav
-        class="flex justify-between items-center max-w-6xl mx-auto px-6 py-4"
-      >
-        <div class="text-lg font-bold glow">황혜미 포트폴리오</div>
-        <div class="space-x-6">
-          <a href="#about" class="text-cyan-300 hover:text-white">About</a>
-          <a href="#skills" class="text-cyan-300 hover:text-white">Skills</a>
-          <a href="#projects" class="text-cyan-300 hover:text-white"
-            >Projects</a
-          >
-          <a href="#career" class="text-cyan-300 hover:text-white">Career</a>
-        </div>
-      </nav>
+  <body class="bg-[#f9fafb] text-[#1f2937]">
+    <!-- Header -->
+    <header class="text-center py-12 bg-[#0f172a] text-white shadow-md">
+      <h1 class="text-5xl font-bold tracking-tight">황혜미 포트폴리오</h1>
+      <p class="text-lg mt-2">
+        프론트엔드 개발자 | 사용자 중심 인터페이스 지향
+      </p>
     </header>
 
-    <section
-      class="hero min-h-screen flex flex-col justify-center items-center text-center px-4 pt-32"
-    >
-      <h1
-        class="text-3xl bg-black text-white px-6 py-3 rounded-lg shadow-lg mb-4"
-      >
-        - 황혜미 -
-      </h1>
-      <h2 class="text-xl text-blue-700 mb-4">프론트 엔드 개발자 포트폴리오</h2>
-      <p class="max-w-xl text-base mb-4">~~~~~~~~~~~~~</p>
-      <div class="xp-bar w-1/2 mx-auto mb-2"></div>
-      <p class="text-sm">Level 7 - EXP 70%</p>
-      <a href="#about" class="scroll-down-arrow">▼</a>
-    </section>
-
-    <section id="about" class="py-16 px-4 max-w-5xl mx-auto">
-      <h2 class="text-lg border-b-2 border-gray-700 inline-block mb-8">
+    <!-- About -->
+    <section id="about" class="py-20 bg-white text-center">
+      <h2 class="text-3xl font-semibold mb-10 text-[#0f172a] tracking-wider">
         ABOUT ME
       </h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        <div class="bg-white bg-opacity-80 p-4 rounded-lg shadow">
-          이름<br /><strong>황혜미</strong>
+      <p class="text-lg leading-relaxed max-w-3xl mx-auto mb-10 text-gray-700">
+        안녕하세요. 프론트엔드 개발자
+        <strong class="text-blue-700">황혜미</strong>입니다. <br />
+        전공은 재료공학이지만 스스로 프로젝트를 기획하고 개발하며, 개발자라는
+        진로를 선택하게 되었습니다. <br />
+        인터페이스를 설계하고 사용자와 소통하는 코드를 짜는 일에 큰 보람을
+        느낍니다.
+      </p>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto"
+      >
+        <div class="bg-[#f1f5f9] shadow rounded-lg p-5 text-sm">
+          <strong>🎂 생년월일</strong><br />2002.06.28
         </div>
-        <div class="bg-white bg-opacity-80 p-4 rounded-lg shadow">
-          생년월일<br /><strong>2002.06.28</strong>
+        <div class="bg-[#f1f5f9] shadow rounded-lg p-5 text-sm">
+          <strong>🏠 거주지</strong><br />부산광역시 남구
         </div>
-        <div class="bg-white bg-opacity-80 p-4 rounded-lg shadow">
-          위치<br /><strong>부산광역시 남구</strong>
+        <div class="bg-[#f1f5f9] shadow rounded-lg p-5 text-sm">
+          <strong>📞 연락처</strong><br />010-1234-5678
         </div>
-        <div class="bg-white bg-opacity-80 p-4 rounded-lg shadow">
-          연락처<br /><strong>010-1234-5678</strong>
+        <div class="bg-[#f1f5f9] shadow rounded-lg p-5 text-sm">
+          <strong>📧 이메일</strong><br />gpal5512@naver.com
         </div>
-        <div class="bg-white bg-opacity-80 p-4 rounded-lg shadow">
-          이메일<br /><strong>gpal5512@naver.com</strong>
-        </div>
-        <div class="bg-white bg-opacity-80 p-4 rounded-lg shadow">
-          학력<br /><strong>부경대학교 (재료공학과)</strong>
+        <div class="bg-[#f1f5f9] shadow rounded-lg p-5 text-sm">
+          <strong>🎓 학력</strong><br />부경대 재료공학과
         </div>
       </div>
     </section>
 
-    <section id="skills" class="py-16 px-4 max-w-5xl mx-auto">
-      <h2 class="text-lg border-b-2 border-gray-700 inline-block mb-6">
+    <!-- Skills -->
+    <section id="skills" class="py-20 bg-[#f0fdf4]">
+      <h2
+        class="text-3xl font-semibold text-center mb-10 text-[#0f766e] tracking-wider"
+      >
         SKILLS
       </h2>
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-        <div class="pixel-button text-center">HTML</div>
-        <div class="pixel-button text-center">CSS</div>
-        <div class="pixel-button text-center">JavaScript</div>
-        <div class="pixel-button text-center">React</div>
-        <div class="pixel-button text-center">Vue</div>
-        <div class="pixel-button text-center">TypeScript</div>
-        <div class="pixel-button text-center">Git</div>
-        <div class="pixel-button text-center">Figma</div>
+      <div
+        class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-5xl mx-auto text-center"
+      >
+        <div class="bg-white rounded-lg border border-gray-200 p-4 shadow">
+          HTML / CSS
+        </div>
+        <div class="bg-white rounded-lg border border-gray-200 p-4 shadow">
+          JavaScript
+        </div>
+        <div class="bg-white rounded-lg border border-gray-200 p-4 shadow">
+          React
+        </div>
+        <div class="bg-white rounded-lg border border-gray-200 p-4 shadow">
+          Vue
+        </div>
+        <div class="bg-white rounded-lg border border-gray-200 p-4 shadow">
+          TypeScript
+        </div>
+        <div class="bg-white rounded-lg border border-gray-200 p-4 shadow">
+          Git
+        </div>
+        <div class="bg-white rounded-lg border border-gray-200 p-4 shadow">
+          Figma
+        </div>
+        <div class="bg-white rounded-lg border border-gray-200 p-4 shadow">
+          Python
+        </div>
       </div>
     </section>
 
-    <section id="projects" class="py-16 px-4 max-w-5xl mx-auto">
-      <h2 class="text-lg border-b-2 border-gray-700 inline-block mb-6">
+    <!-- Projects -->
+    <section id="projects" class="py-20 bg-white">
+      <h2
+        class="text-3xl font-semibold text-center mb-10 text-[#1e293b] tracking-wider"
+      >
         PROJECTS
       </h2>
-      <div class="grid gap-6 md:grid-cols-2">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto px-6">
+        <!-- 출결 시스템 -->
         <div
-          class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition-transform transform hover:-translate-y-2"
+          class="bg-gradient-to-br from-[#f0fdf4] to-white border border-gray-200 shadow-lg rounded-xl p-6 hover:scale-[1.02] transition"
         >
-          <h3 class="text-md font-bold mb-2">프로젝트 A</h3>
-          <p class="mb-2">
-            로또 번호 추천 웹사이트
+          <h3 class="text-xl font-bold mb-2 text-[#0f766e]">
+            출결 관리 시스템
+          </h3>
+          <p class="mb-2 text-sm text-gray-600">PyQt5 · Oracle DB · BLE</p>
+          <p class="text-gray-700 text-sm mb-4">
+            비콘(BLE)을 활용해 학생 출석을 자동으로 체크하고, PyQt5 기반 GUI로
+            실시간 출결 상태 및 통계를 시각화합니다. Oracle DB와 연동하여 출결
+            기록과 마이페이지 기능을 제공했습니다.
           </p>
-          <ul class="list-disc list-inside text-sm">
-            <li>Spring Boot + Chart.js를 활용한 통계 기반 번호 추천 시스템</li>
-          </ul>
+          <a
+            href="https://github.com/adlfjasdflsdfj/java-database-2025/tree/main/teamproject"
+            class="text-[#0f766e] text-sm underline"
+            >🔗 프로젝트 보기</a
+          >
         </div>
+
+        <!-- 로또 분석 사이트 -->
         <div
-          class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition-transform transform hover:-translate-y-2"
+          class="bg-gradient-to-br from-[#f0fdf4] to-white border border-gray-200 shadow-lg rounded-xl p-6 hover:scale-[1.02] transition"
         >
-          <h3 class="text-md font-bold mb-2">프로젝트 B</h3>
-          <p class="mb-2">출결 관리 시스템</p>
-          <ul class="list-disc list-inside text-sm">
-            <li>PyQt5와 Oracle DB를 이용한 BLE 기반 출석 시스템</li>
+          <h3 class="text-xl font-bold mb-2 text-[#0f766e]">
+            로또 분석 웹사이트
+          </h3>
+          <p class="mb-2 text-sm text-gray-600">
+            Spring Boot · Chart.js · Python
+          </p>
+          <p class="text-gray-700 text-sm mb-4">
+            로또 데이터를 수집/분석하여 확률 기반 추천 번호를 제공합니다.
+            Chart.js로 시각화하고, 백엔드는 Spring Boot로 구성해 API 연동 및
+            분석 자동화를 구현했습니다.
+          </p>
+          <a href="#" class="text-[#0f766e] text-sm underline"
+            >🔗 프로젝트 보기</a
+          >
+        </div>
+
+        <!-- html과 javascript정리 -->
+        <div
+          class="bg-gradient-to-br from-[#f0fdf4] to-white border border-gray-200 shadow-lg rounded-xl p-6 hover:scale-[1.02] transition"
+        >
+          <h3 class="text-xl font-bold mb-2 text-[#0f766e]">
+            html, javascript 정리
+          </h3>
+          <p class="mb-2 text-sm text-gray-600"></p>
+          <p class="text-gray-700 text-sm mb-4"></p>
+          <a href="#" class="text-[#0f766e] text-sm underline"
+            >🔗 프로젝트 보기</a
+          >
         </div>
       </div>
     </section>
 
-    <section id="career" class="py-16 px-4 max-w-5xl mx-auto">
-      <h2 class="text-lg border-b-2 border-gray-700 inline-block mb-6">
-        CAREER & EDUCATION
-      </h2>
-      <ul class="list-disc list-inside space-y-2">
-        <li><strong>OO...</strong> - OO... (202X~202X)</li>
-      </ul>
-    </section>
-
-    <section id="archiving" class="py-16 px-4 max-w-5xl mx-auto">
-      <h2 class="text-lg border-b-2 border-gray-700 inline-block mb-6">
-        ARCHIVING
-      </h2>
-      <div class="grid gap-6 md:grid-cols-2">
-        <div
-          class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition-transform transform hover:-translate-y-2"
-        >
-          <h3 class="text-md font-bold mb-2">GitHub</h3>
-          <p class="text-sm">https://github.com/adlfjasdflsdfj</p>
-          <p class="text-sm">소스 코드 저장소</p>
-        </div>
-        <div
-          class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition-transform transform hover:-translate-y-2"
-        >
-          <h3 class="text-md font-bold mb-2">OOOO</h3>
-          <p class="text-sm">OOOOO</p>
-          <p class="text-sm">OOOOOO</p>
-        </div>
-      </div>
-    </section>
-
-    <footer class="bg-blue-900 text-white text-center py-4 text-xs">
-      ⓒ 2025 ooo. All rights reserved.
+    <!-- Footer -->
+    <footer
+      class="text-center py-6 bg-[#f8fafc] mt-10 border-t border-gray-200"
+    >
+      <p class="text-sm text-gray-500">© 2025 황혜미. All rights reserved.</p>
     </footer>
   </body>
 </html>

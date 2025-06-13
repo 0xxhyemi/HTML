@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: 'Pretendard', sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+
+    .content {
+      color: rgb(130, 185, 130);
+      text-align: center;
+      padding: 50px;
+    }
+
+    #about {
+      background-color: rgba(171, 221, 142, 0.13);
+    }
+
+    #technology {
+      background-color: rgba(171, 221, 142, 0.18);
+    }
+
+    #products {
+      background-color: rgba(171, 221, 142, 0.25);
+    }
+
+    #Contact {
+      background-color: rgba(171, 221, 142, 0.3);
+    }
+
+    .tab {
+      float: left;
+      background-color: rgba(228, 222, 171, 0.671);
+      color: rgba(202, 172, 135, 0.904);
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      width: 20%;
+      margin: 0;
+
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      background: white;
+      border-radius: 12px;
+      padding: 15px 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s;
+    }
+
+    .item:hover {
+      transform: scale(1.02);
+    }
+
+    .label {
+      min-width: 150px;
+      padding: 10px 16px;
+      background-color: #e0fae9;
+      color: #00644e;
+      font-weight: bold;
+      border-radius: 20px;
+      text-align: center;
+      margin-right: 20px;
+      white-space: nowrap;
+    }
+
+    .description {
+      flex: 1;
+      color: #333;
+    }
+
+    .tab-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .tab {
+      flex: 1;
+      background-color: rgba(255, 247, 172, 0.48);
+      color: rgba(248, 191, 122, 0.637);
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 0;
+      font-size: 1rem;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- (div.content>h1+p)*5 -->
+  <div id="about" class="content">
+    <h1> 🍀 About 🍀</h1>
+    <div
+      style="max-width: 600px; margin: 50px auto; text-align: center; font-family: 'Segoe UI', sans-serif; color: #333;">
+      <p style="font-size: 2rem; font-weight: bold; margin-bottom: 0.5rem; color: #00644e;">안녕하세요! 👋</p>
+      <p style="font-size: 1.5rem; margin-bottom: 2rem;">
+        한 걸음 앞으로 나아가는<br />
+        초보 개발자 <strong style="color: #07cc0094;">김은희</strong>입니다.<br /><br />
+        비전공자이지만 코딩에 매력을 느껴 <br />개발자를 꿈꾸게 되었습니다. <br /><br />
+        끊임 없이 노력하여 <br />발전하는 개발자가 되겠습니다.<br /><br /><br />
+      </p>
+
+      <!--추가된 정보 섹션-->
+      <div
+        style="background-color: #f0f8ff; border-radius: 15px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <ul style="list-style: none; padding: 10px; font-size: 1.2rem; line-height: 2; text-align: left;">
+          <li>📚 <strong>전공:</strong> 생태공학</li>
+          <li style="font-size: 0.9rem;">➕ <strong>복수전공:</strong> 생태공학</li>
+          <li>🎂 <strong>생일:</strong> 1997년 10월 31일</li>
+          <li>🏡 <strong>거주지:</strong> 부산광역시 북구</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="technology" class="content">
+    <h1>☘️ Technology ☘️</h1>
+    <div class="container">
+      <div class="item">
+        <div class="label">컴퓨터 영역</div>
+        <div class="description">컴퓨터 활용능력 2급, 워드프로세스 1급 보유</div>
+      </div>
+      <div class="item">
+        <div class="label">HTML / CSS3</div>
+        <div class="description">기본 구조 설계 및 간단한 스타일 가능함</div>
+      </div>
+      <div class="item">
+        <div class="label">Python</div>
+        <div class="description">
+          기본 문법 및 pandas, beautifulsoup 등
+          <br />라이브러리 활용 가능
+        </div>
+      </div>
+      <div class="item">
+        <div class="label">JavaScript</div>
+        <div class="description">웹페이지 동작 구현 및 서버 구축 기초 가능</div>
+      </div>
+      <div class="item">
+        <div class="label">Oracle</div>
+        <div class="description">기본적인 CRUD 쿼리 사용 가능함</div>
+      </div>
+      <div class="item">
+        <div class="label">Spring</div>
+        <div class="description">기초 서버 개발 및 웹 틀 구현 가능함</div>
+      </div>
+
+    </div>
+  </div>
+  <div id="products" class="content">
+    <h1>🌿 Products 🌿</h1>
+    <div
+      style="display: flex; flex-direction: column; gap: 20px; max-width: 700px; margin: 30px auto; font-family: 'Segoe UI', sans-serif;">
+
+      <!-- Project 1 -->
+      <a href="https://github.com/jszxro/PK_miniproject_3" target="_blank" style="text-decoration: none;">
+        <div
+          style="background-color: #deeee3; border-radius: 15px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.2s ease-in-out; color: #333;">
+          <h2 style="font-size: 1.5rem; color: #07cc00; margin-bottom: 0.5rem;">📘 miniproject-bukjeok</h2>
+          <p style="font-size: 1.1rem; line-height: 1.6;">
+            도서관 대출 시스템을 구현한 미니 팀 프로젝트로써<br />
+            책 검색, 대출/반납, 사용자 관리 기능 등을 포함했습니다.<br />
+            깔끔한 구조와 사용 편의성을 목표로 개발하려 했습니다.
+          </p>
+        </div>
+      </a>
+
+      <!-- Project 2 -->
+      <a href="https://github.com/BBiT808/Game-of_pyThon" target="_blank" style="text-decoration: none;">
+        <div
+          style="background-color: #e7f3ef; border-radius: 15px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.2s ease-in-out; color: #333;">
+          <h2 style="font-size: 1.5rem; color: #5ac282; margin-bottom: 0.5rem;">🖥️ Game-of_pyThon</h2>
+          <p style="font-size: 1.1rem; line-height: 1.6;">
+            교육 동안 배운 기술 스택을 정리했습니다.<br />
+            다양한 기술을 연마할 수 있었던 소중한 기간이었습니다.<br />
+          </p>
+        </div>
+      </a>
+
+      <!-- Project 3 -->
+      <a href="https://bbit808.github.io/html/" target="_blank" style="text-decoration: none;">
+        <div
+          style="background-color: #ebf0e1; border-radius: 15px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.2s ease-in-out; color: #333;">
+          <h2 style="font-size: 1.5rem; color: #94b96a; margin-bottom: 0.5rem;">💕 HTML 및 JavaScript 정리 사이트</h2>
+          <p style="font-size: 1.1rem; line-height: 1.6;">
+            교육 동안 배운 HTML과 JavaScript를 정리한 페이지입니다.<br />
+            더불어 배운 기술들을 활용해 <br />
+            내용을 정리한 웹페이지를 만들었습니다.
+          </p>
+        </div>
+      </a>
+
+    </div>
+  </div>
+  <div id="Contact" class="content">
+    <h1>🌳 Contact 🌳</h1>
+    <div style="border-top: 2px solid #eee; padding-top: 1rem;">
+      <br />
+      <strong style="color : rgb(81, 179, 81); font-size: 2rem;">봐 주셔서 감사합니다!</strong><br />
+      <br />
+      <br />
+      <p style="font-size: 1.2rem; margin-bottom: 0.2rem;">📬 <strong>E-mail</strong></p>
+      <p style="font-size: 1rem;"><a href="mailto:pinokio1031@naver.com"
+          style="color: #00cc1b8c; text-decoration: none;">pinokio1031@naver.com</a></p>
+    </div>
+  </div>
+
+  <div class="tab-container">
+    <!-- (button.tab{About})*5 -->
+    <button class="tab" onclick="openMenu('about', this, 'rgba(171, 221, 142, 0.13)')">
+      About
+    </button>
+    <button class="tab" onclick="openMenu('technology', this, 'rgba(171, 221, 142, 0.18)')">
+      Technology
+    </button>
+    <button class="tab" onclick="openMenu('products', this, 'rgba(171, 221, 142, 0.25)')">
+      Products
+    </button>
+    <button class="tab" onclick="openMenu('Contact', this, 'rgba(171, 221, 142, 0.3)')">
+      Contact
+    </button>
+  </div>
+
+  <script>
+    const contents = document.querySelectorAll(".content");
+    const tabs = document.querySelectorAll(".tab");
+    const openMenu = (targetId, currentBtn, color) => {
+      contents.forEach((v) => {
+        v.style.display = "none";
+      });
+      tabs.forEach((v) => {
+        v.style.backgroundColor = "rgba(255, 247, 172, 0.48)";
+      });
+      document.getElementById(targetId).style.display = "block";
+      currentBtn.style.backgroundColor = color;
+      //   openMenu("about", this, "tomato")
+    };
+    window.onload = () => tabs[0].click(); // 버튼을 누르는 동작 !!
+  </script>
+</body>
+
+</html>
