@@ -8,7 +8,7 @@
 * **`ex01-01.html`**
 * **`ex01-02.html`**
 * **`ex01-03.html`**
-- **`ex01-04.html`**
+* **`ex01-04.html`**
 <img src="./image/ex01-04.png" width="500">
 
 * **`ex01-05.html`**
