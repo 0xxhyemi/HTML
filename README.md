@@ -18,7 +18,7 @@
 
 * **`ex01-08.html`**
 * **`ex01-09.html`**
-<div style="padding-bottom: 1000px;"></div>
+<br>
 
 ## ex02
 
