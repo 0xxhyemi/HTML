@@ -9,18 +9,18 @@
 * **`ex01-03.html`**
 - **`ex01-04.html`**
 
-<img src="./image/ex01-04.png" width="700">
+<img src="./image/ex01-04.png" width="500">
 
 * **`ex01-05.html`**
 * **`ex01-06.html`**
 * **`ex01-07.html`**
 
-<img src="./image/ex01-07.png" width="700">
+<img src="./image/ex01-07.png" width="500">
 
 * **`ex01-08.html`**
 * **`ex01-09.html`**
 
-<img src="./image/ex01-09.png" width="700">
+<img src="./image/ex01-09.png" width="500">
 
 ## ex02
 
