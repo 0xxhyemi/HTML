@@ -105,8 +105,6 @@
 <br>
 
 ## ex11
-- **`ex11-05a.html`**
-<img src="./image/ex11-05a.png" width="500">
 
 - **`ex11-06.html`**
 <img src="./image/ex11-06.png" width="500">
@@ -131,7 +129,7 @@
 <img src="./image/ex13-01.png" width="500">
 
 - **`ex13-03c.html`**
-<img src="./image/ex13-01c.png" width="500">
+<img src="./image/ex13-03c.png" width="500">
 <br>
 
 ## ex14
@@ -195,8 +193,8 @@
 
 ## ex21
 
-- **`ex21-02b.html`**
-<img src="./image/ex21-02b.png" width="500">
+- **`ex21-01b.html`**
+<img src="./image/ex21-01b.png" width="500">
 
 - **`ex21-02c.html`**
 <img src="./image/ex21-02c.png" width="500">
@@ -219,5 +217,3 @@
 - **`ex24-01.html`**
 <img src="./image/ex24-01.png" width="500">
 
-- **`ex11-.html`**
-<img src="./image/ex11-.png" width="500">
