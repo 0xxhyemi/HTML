@@ -7,24 +7,24 @@
 * **`ex01-03.html`**
 - **`ex01-04.html`**
 
-<div style="display: flex; justify-content: center; align-items: center; border: 5px solid #FF5733; padding: 15px; width: fit-content; margin: 20px auto; border-radius: 15px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
+<center>
   <img src="./image/ex01-04.png" alt="ex01-04 실행 화면" width="400"/>
-</div>
+</center>
 
 * **`ex01-05.html`**
 * **`ex01-06.html`**
 * **`ex01-07.html`**
 
-<div style="display: flex; justify-content: center; align-items: center; border: 5px solid #FF5733; padding: 15px; width: fit-content; margin: 20px auto; border-radius: 15px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
+<center>
   <img src="./image/ex01-07.png" alt="ex01-07 실행 화면" width="400"/>
-</div>
+</center>
 
 * **`ex01-08.html`**
 * **`ex01-09.html`**
 
-<div style="display: flex; justify-content: center; align-items: center; border: 5px solid #FF5733; padding: 15px; width: fit-content; margin: 20px auto; border-radius: 15px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
+<center>
   <img src="./image/ex01-09.png" alt="ex01-09 실행 화면" width="400"/>
-</div>
+</center>
 
 
 
