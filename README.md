@@ -5,7 +5,7 @@
 
 ## ex01
 
-* `ex01-01.html`
+* ex01-01.html
 * **`ex01-02.html`**
 * **`ex01-03.html`**
 * **`ex01-04.html`**
