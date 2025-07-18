@@ -5,7 +5,7 @@
 * **`ex01-03.html`**
 * **`ex01-04.html`**
 
-<div style="border: 2px solid #ccc; padding: 10px; width: fit-content; margin: 20px auto; text-align: center;">
+<div style="border: 5px solid #4CAF50; padding: 10px; width: fit-content; margin: 20px auto; text-align: center;">
   <img src="./image/ex01-04.png" alt="사진" width="400"/>
 </div>
 
@@ -13,16 +13,17 @@
 * **`ex01-06.html`**
 * **`ex01-07.html`**
 
-<div style="border: 2px solid #ccc; padding: 10px; width: fit-content; margin: 20px auto; text-align: center;">
+<div style="border: 5px solid #4CAF50; padding: 10px; width: fit-content; margin: 20px auto; text-align: center;">
   <img src="./image/ex01-07.png" alt="사진" width="400"/>
 </div>
 
 * **`ex01-08.html`**
 * **`ex01-09.html`**
 
-<div style="border: 2px solid #ccc; padding: 10px; width: fit-content; margin: 20px auto; text-align: center;">
+<div style="border: 5px solid #4CAF50; padding: 10px; width: fit-content; margin: 20px auto; text-align: center;">
   <img src="./image/ex01-09.png" alt="사진" width="400"/>
 </div>
+
 
 
 ## ex02
