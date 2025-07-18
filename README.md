@@ -3,16 +3,20 @@
 ## ex01
 
 * **`ex01-01.html`**
-  
-![프로젝트 이미지](./image/member-1.png)
 * **`ex01-02.html`**
 * **`ex01-03.html`**
 * **`ex01-04.html`**
+  
+![사진](./image/ex01-04.png)
 * **`ex01-05.html`**
 * **`ex01-06.html`**
 * **`ex01-07.html`**
+  
+![사진](./image/ex01-07.png)
 * **`ex01-08.html`**
 * **`ex01-09.html`**
+  
+![사진](./image/ex01-09.png)
 
 ## ex02
 
