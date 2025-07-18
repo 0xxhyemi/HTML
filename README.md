@@ -3,7 +3,7 @@
 ## ex01
 
 * **`ex01-01.html`**
-![프로젝트 이미지](/Screenshots/스크린샷 2025-05-22 111915.png)
+![프로젝트 이미지](./image/member-1.png)
 * **`ex01-02.html`**
 * **`ex01-03.html`**
 * **`ex01-04.html`**
