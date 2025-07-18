@@ -2,6 +2,8 @@
 
 이 프로젝트는 다양한 HTML 예제 목록 다루고 있습니다. 아래는 주요 예제들에 해당하는 실행화면입니다.
 
+## ex01
+
 * **`ex01-01.html`**
 * **`ex01-02.html`**
 * **`ex01-03.html`**
@@ -13,12 +15,12 @@
 * **`ex01-06.html`**
 * **`ex01-07.html`**
 
-<img src="./image/ex01-07,png" width="700">
+<img src="./image/ex01-07.png" width="700">
 
 * **`ex01-08.html`**
 * **`ex01-09.html`**
 
-<img src="./image/ex01-09,png" width="700">
+<img src="./image/ex01-09.png" width="700">
 
 ## ex02
 
