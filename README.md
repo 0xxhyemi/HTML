@@ -20,11 +20,12 @@
 * **`ex01-08.html`**
 * **`ex01-09.html`**
 
-<img src="./image/ex01-09.png" width="500">
-
 ## ex02
 
 * **`ex02-01.html`**
+
+<img src="./image/ex02-01.png" width="500">
+
 * **`ex02-01a0.html`**
 * **`ex02-02.html`**
 * **`ex02-03.html`**
