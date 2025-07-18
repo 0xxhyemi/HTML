@@ -31,23 +31,31 @@
 * **`ex02-04.html`**
 * **`ex02-05.html`**
 * **`ex02-06.html`**
+<img src="./image/ex02-06.png" width="500">
+
 * **`ex02-06a.html`**
 * **`ex02-07.html`**
 * **`ex02-08.html`**
+<img src="./image/ex02-08.png" width="500">
+
 * **`ex02-09.html`**
 * **`ex02-09a.html`**
 
 ## ex03
 
 * **`ex03-01.html`**
+<img src="./image/ex03-01.png" width="500">
 * **`ex03-01a.html`**
 * **`ex03-02.html`**
 * **`ex03-03.html`**
 * **`ex03-04.html`**
+<img src="./image/ex03-04.png" width="500">
 
 ## ex04
 
 * **`ex04-01.html`**
+<img src="./image/ex04-01.png" width="500">
+
 * **`ex04-02.css`**
 * **`ex04-02.html`**
 * **`ex04-03.html`**
@@ -61,6 +69,7 @@
 * **`ex04-08.html`**
 * **`ex04-09.html`**
 * **`ex04-10.html`**
+<img src="./image/ex04-10.png" width="500">
 
 ## ex05
 
@@ -71,10 +80,14 @@
 * **`ex05-05.html`**
 * **`ex05-06.html`**
 * **`ex05-07.html`**
+<img src="./image/ex05-07.png" width="500">
+
 * **`ex05-08.html`**
 * **`ex05-08a.html`**
 * **`ex05-09.html`**
 * **`ex05-09a.html`**
+<img src="./image/ex05-09a.png" width="500">
+
 * **`ex05-09b.html`**
 * **`ex05-10.html`**
 * **`ex05-10a.html`**
