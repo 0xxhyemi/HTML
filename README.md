@@ -7,24 +7,18 @@
 * **`ex01-03.html`**
 - **`ex01-04.html`**
 
-<center>
-  <img src="./image/ex01-04.png" alt="ex01-04 실행 화면" width="400"/>
-</center>
+<img src="./image/ex01-04" width="700">
 
 * **`ex01-05.html`**
 * **`ex01-06.html`**
 * **`ex01-07.html`**
 
-<center>
-  <img src="./image/ex01-07.png" alt="ex01-07 실행 화면" width="400"/>
-</center>
+<img src="./image/ex01-07" width="700">
 
 * **`ex01-08.html`**
 * **`ex01-09.html`**
 
-<center>
-  <img src="./image/ex01-09.png" alt="ex01-09 실행 화면" width="400"/>
-</center>
+<img src="./image/ex01-09" width="700">
 
 
 
