@@ -107,9 +107,9 @@
 ## ex11
 
 - **`ex11-06.html`**
-<img src="./image/ex11-06.png" width="500">
-
 <img src="./image/ex11-06(1).png" width="500">
+
+<img src="./image/ex11-06.png" width="500">
 <br>
 
 ## ex12
@@ -143,7 +143,7 @@
 
 - **`ex14-04c.html`**
 <img src="./image/ex14-04c.png" width="500">
-<img src="./image/ex14-04c(1)-.png" width="500">
+<img src="./image/ex14-04c(1).png" width="500">
 <img src="./image/ex14-04c(2).png" width="500">
 <br>
 
