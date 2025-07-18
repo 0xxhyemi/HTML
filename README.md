@@ -97,15 +97,19 @@
 * **`ex05-12.html`**
 * **`ex05-13.html`**
 
-  ### ex06: 기초 예제
+  ### ex06
 - **`ex06-01.html`**
 - **`ex06-02.html`**
+<img src="./image/ex06-02.png" width="500">
+
 - **`ex06-02a.html`**
 - **`ex06-02b.html`**
 - **`ex06-03.html`**
 - **`ex06-04.html`**
 - **`ex06-04a.html`**
 - **`ex06-05.html`**
+<img src="./image/ex06-05.png" width="500">
+
 - **`ex06-05linear-1.html`**
 - **`ex06-05linear-2.html`**
 - **`ex06-05linear-3.html`**
@@ -121,13 +125,17 @@
 
 ### ex07
 - **`ex07-01.html`**
+<img src="./image/ex07-01.png" width="500">
 - **`ex07-01a.html`**
 - **`ex07-02.html`**
 - **`ex07-03.html`**
 - **`ex07-04.html`**
+<img src="./image/ex07-04.png" width="500">
 
 ### ex08
 - **`ex08-01.html`**
+<img src="./image/ex08-01.png" width="500">
+
 - **`ex08-02.html`**
 - **`ex08-03.html`**
 - **`ex08-03a.html`**
@@ -140,6 +148,8 @@
 - **`ex08-08b.html`**
 - **`ex08-09.html`**
 - **`ex08-10.html`**
+<img src="./image/ex08-10.png" width="500">
+
 - **`ex08-11.html`**
 - **`ex08-12.html`**
 
@@ -152,24 +162,34 @@
 - **`ex09-05.html`**
 - **`ex09-06.html`**
 - **`ex09-07.html`**
+<img src="./image/ex09-07.png" width="500">
+
 - **`ex09-08.html`**
 - **`ex09-08a.html`**
+<img src="./image/ex09-08a.png" width="500">
+
 - **`ex09-09.html`**
 - **`ex09-10.html`**
 
 ### ex10
 - **`ex10-01.html`**
 - **`ex10-02.html`**
+<img src="./image/ex10-02.png" width="500">
+
 - **`ex10-03.html`**
 - **`ex10-04.html`**
 - **`ex10-05a.html`**
 - **`ex10-05b.html`**
 - **`ex10-05c.html`**
 - **`ex10-06.html`**
+<img src="./image/ex10-06.png" width="500">
+
 - **`ex10-06a.html`**
 - **`ex10-07.html`**
 - **`ex10-08.html`**
 - **`ex10-08a.html`**
+<img src="./image/ex10-08a.png" width="500">
+
 - **`ex10-09.html`**
 - **`ex10-09a.html`**
 
