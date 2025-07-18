@@ -102,5 +102,73 @@
 - **`ex10-08a.html`**
 <img src="./image/ex10-08a.png" width="500">
 
+<br>
 
+## ex11
+- **`ex11-05a.html`**
+<img src="./image/ex11-05a.png" width="500">
 
+- **`ex11-06.html`**
+<img src="./image/ex11-06.png" width="500">
+
+- **`ex11-06(1).html`**
+<img src="./image/ex11-06(1).png" width="500">
+
+## ex12
+
+- **`ex12-01.html`**
+<img src="./image/ex12-01(1).png" width="500">
+
+- **`ex12-01(1).html`**
+<img src="./image/ex12-01(1).png" width="500">
+
+- **`ex11-.html`**
+<img src="./image/ex11-.png" width="500">
+- **`ex11-.html`**
+<img src="./image/ex11-.png" width="500">
+- **`ex11-.html`**
+<img src="./image/ex11-.png" width="500">
+- **`ex11-.html`**
+<img src="./image/ex11-.png" width="500">
+- **`ex11-.html`**
+<img src="./image/ex11-.png" width="500">
+- **`ex11-.html`**
+<img src="./image/ex11-.png" width="500">
+- **`ex11-.html`**
+<img src="./image/ex11-.png" width="500">
+- **`ex11-.html`**
+<img src="./image/ex11-.png" width="500">
+- **`ex11-.html`**
+<img src="./image/ex11-.png" width="500">
+- **`ex11-.html`**
+<img src="./image/ex11-.png" width="500">
+- **`ex11-.html`**
+<img src="./image/ex11-.png" width="500">
+- **`ex11-.html`**
+<img src="./image/ex11-.png" width="500">
+- **`ex11-.html`**
+<img src="./image/ex11-.png" width="500">
+- **`ex11-.html`**
+<img src="./image/ex11-.png" width="500">
+- **`ex11-.html`**
+<img src="./image/ex11-.png" width="500">
+- **`ex11-.html`**
+<img src="./image/ex11-.png" width="500">
+- **`ex11-.html`**
+<img src="./image/ex11-.png" width="500">
+- **`ex11-.html`**
+<img src="./image/ex11-.png" width="500">
+- **`ex11-.html`**
+<img src="./image/ex11-.png" width="500">
+- **`ex11-.html`**
+<img src="./image/ex11-.png" width="500">
+- **`ex11-.html`**
+<img src="./image/ex11-.png" width="500">
+- **`ex11-.html`**
+<img src="./image/ex11-.png" width="500">
+- **`ex11-.html`**
+<img src="./image/ex11-.png" width="500">
+- **`ex11-.html`**
+<img src="./image/ex11-.png" width="500">
+- **`ex11-.html`**
+<img src="./image/ex11-.png" width="500">
